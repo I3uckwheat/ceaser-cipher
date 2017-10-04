@@ -1,3 +1,5 @@
+# lib/cypher.rb
+
 def ceasar_cypher(sentence, cypher)
   encrypted = []
   sentence.split('').each do |letter|
@@ -20,9 +22,8 @@ def ceasar_cypher(sentence, cypher)
       encrypted.push(letter)
   end
   end
-  puts encrypted.join
+  encrypted.join
 end
 
 # a-z = [96..122]
 # A-Z = [65..90]
-ceasar_cypher('I pledge aliegence to the flag', 10)
